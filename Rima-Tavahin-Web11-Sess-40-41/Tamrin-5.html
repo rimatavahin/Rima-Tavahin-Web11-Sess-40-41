@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(238, 247, 207);
+        }
+
+        p {
+            font-size: 40px;
+            color: rgb(34, 119, 45);
+        }
+        .txt{
+            background-color: rgb(250, 247, 86);
+            width: 100px;
+            height: 50px;
+            margin: 10px 80px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Click the button to the confirm.</p>
+
+    <button class="txt" onclick="myFunction()">Click Here</button>
+
+    <p id="txt"></p>
+
+    <script>
+        function myFunction() {
+            var result;
+            var r = confirm("Select an Action!");
+            if (r == true) {
+                result = "You have selected OK!";
+            } else {
+                result = "You have selected Cancelled!";
+            }
+            document.getElementById("txt").innerHTML = result;
+        }  
+    </script>
+</body>
+
+</html>

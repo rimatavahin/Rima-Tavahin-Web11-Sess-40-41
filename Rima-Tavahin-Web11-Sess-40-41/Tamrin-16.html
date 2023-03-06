@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt {
+            border: 1px solid green;
+            background-color: rgb(130, 250, 130);
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AppendChild() Method</h1>
+    <div id="txt">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus.
+    </div>
+    <button onclick="demo()">Submit</button>
+    <script>
+        function demo() {
+            let x = document.createElement("P");
+            let t = document.createTextNode("Rima Tavahin");
+            x.appendChild(t);
+            document.getElementById("txt").appendChild(x);
+        }
+    </script>
+</body>
+
+</html>

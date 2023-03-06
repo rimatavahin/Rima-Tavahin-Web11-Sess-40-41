@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        body{
+        background-color: #ccecf8;
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Click the button Wait 4 seconds for alert.</p>
+
+    <button onclick="_myFunction()">click me</button>
+
+    <script>
+        let timeout;
+
+        function _myFunction() {
+            timeout = setTimeout(alertFunc, 4000);
+        }
+
+        function alertFunc() {
+            alert("Rima Tavahin!");
+        }
+    </script>
+</body>
+
+</html>
